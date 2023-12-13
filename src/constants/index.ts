@@ -15,6 +15,7 @@ export const BSC_CHAIN_ID = Number(process.env.BSC_CHAIN_ID);
 export const BSC_CONTRACT_ADDR = process.env.BSC_CONTRACT_ADDR;
 
 export const EVM_AUTHORITY_KEY = process.env.EVM_AUTHORITY_KEY;
+console.log("param =>", process.env.SOL_AUTHORITY_KEY)
 export const SOL_AUTHORITY_KEY = Keypair.fromSecretKey(bs58.decode(process.env.SOL_AUTHORITY_KEY));
 export const SOL_VAULT_ADDRESS = new PublicKey(process.env.SOL_VAULT_ADDRESS);
 
